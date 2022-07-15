@@ -1,0 +1,17 @@
+folha("Eh um lagarto?").
+folha("Eh um leao?").
+folha("Eh um pinguim?").
+folha("Eh uma aguia?").
+folha("Eh uma zebra?").
+galho("Eh um mamifero?").
+galho("Eh um passaro?").
+galho("Ele voa?").
+galho("Tem listra?").
+pai("Eh um mamifero?","Eh um passaro?",nao).
+pai("Eh um mamifero?","Tem listra?",sim).
+pai("Eh um passaro?","Eh um lagarto?",nao).
+pai("Eh um passaro?","Ele voa?",sim).
+pai("Ele voa?","Eh um pinguim?",nao).
+pai("Ele voa?","Eh uma aguia?",sim).
+pai("Tem listra?","Eh um leao?",nao).
+pai("Tem listra?","Eh uma zebra?",sim).

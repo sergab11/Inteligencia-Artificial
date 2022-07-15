@@ -1,0 +1,33 @@
+folha("Eh um baleia?").
+folha("Eh um foca5?").
+folha("Eh um lagarto?").
+folha("Eh um leao?").
+folha("Eh um lobo?").
+folha("Eh um papagaio?").
+folha("Eh um pinguim?").
+folha("Eh uma aguia?").
+folha("Eh uma zebra?").
+galho("Anda em alcateia?").
+galho("Eh aquatico?").
+galho("Eh um mamifero?").
+galho("Eh um passaro?").
+galho("Ele voa?").
+galho("Esse animal fala?").
+galho("Solta fogo?").
+galho("Tem listra?").
+pai("Anda em alcateia?","Eh um leao?",nao).
+pai("Anda em alcateia?","Eh um lobo?",sim).
+pai("Eh aquatico?","Anda em alcateia?",nao).
+pai("Eh aquatico?","Solta fogo?",sim).
+pai("Eh um mamifero?","Eh um passaro?",nao).
+pai("Eh um mamifero?","Tem listra?",sim).
+pai("Eh um passaro?","Eh um lagarto?",nao).
+pai("Eh um passaro?","Ele voa?",sim).
+pai("Ele voa?","Eh um pinguim?",nao).
+pai("Ele voa?","Esse animal fala?",sim).
+pai("Esse animal fala?","Eh um papagaio?",sim).
+pai("Esse animal fala?","Eh uma aguia?",nao).
+pai("Solta fogo?","Eh um baleia?",nao).
+pai("Solta fogo?","Eh um foca5?",sim).
+pai("Tem listra?","Eh aquatico?",nao).
+pai("Tem listra?","Eh uma zebra?",sim).
